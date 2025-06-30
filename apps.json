@@ -34,6 +34,39 @@
     ],
     "setup": []
   },
+  
+  {
+    "name": "Prisma",
+    "description": "Gives LLMs the ability to manage Prisma Postgres databases (e.g. spin up new databases and run migrations or queries)",
+    "icon": {
+      "type": "url",
+      "url": {
+        "light": "https://github.com/prisma/presskit/raw/main/Assets/Prisma-LightSymbol.svg",
+        "dark": "https://github.com/prisma/presskit/raw/main/Assets/Prisma-DarkSymbol.svg"
+      }
+    },
+    "category": "Database",
+    "price": "Free",
+    "developer": "Prisma",
+    "sourceUrl": "https://github.com/prisma/mcp",
+    "config": {
+      "command": "npx",
+      "args": ["-y", "prisma", "mcp"]
+    },
+    "features": [
+      {
+        "name": "Create db",
+        "description": "Create a new Prisma Postgres db",
+        "prompt": "Create a database in the US region"
+      },
+      {
+        "name": "Create table",
+        "description": "Create a new table in the database",
+        "prompt": "Create a new Product table in my database."
+      }
+    ],
+    "setup": []
+  },
   {
     "name": "Memory",
     "description": "This app lets Claude remember information about the user across chats.",
